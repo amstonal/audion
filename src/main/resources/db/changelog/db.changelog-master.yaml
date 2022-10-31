@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-project
+      author: merrill
+      changes:
+        - empty: { }
+  - changeSet:
+      id: hello-world
+      author: merrill
+      changes:
+        - sqlFile:
+            encoding: "utf8"
+            path: 'sql/01-init-campaign-model.sql'
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
