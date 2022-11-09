@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS event
+(
+    id BIGINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    lat VARCHAR(50),
+    log VARCHAR(50),
+    event_type VARCHAR(10)
+);
